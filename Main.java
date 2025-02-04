@@ -54,6 +54,23 @@ public class Main {
       System.out.println(lastElement);
       System.out.println(toBuy.get(3));
 
+      // .set(int index, obj) REPLACES element at that index with the new obj
+      // returns the replaced element (same type as the list holds)
+      String replacedElement = toBuy.set(1, "Baked Cheetos");
+      System.out.println(toBuy);
+      // Often, you won't need to store the return output
+      toBuy.set(2, "Iced Tea"); // like calling a VOID method
+      System.out.println(toBuy);
+
+      // .remove(int index) DELETES element at that index
+      // returns the removed object (same type as the list holds)
+      String removedElement = toBuy.remove(0);
+      System.out.println(toBuy);
+      System.out.println("Moved to shopping cart: " + removedElement);
+      // ALSO shifts all remaining elements to the left (lower index)
+      // Often, you won't need to actually store the removed item
+      toBuy.remove(3);
+      System.out.println(toBuy);
       
 
    }
