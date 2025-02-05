@@ -71,6 +71,23 @@ public class Main {
       // Often, you won't need to actually store the removed item
       toBuy.remove(3);
       System.out.println(toBuy);
+
+      // 7.3 Traversing with Loops
+      ArrayList<Integer> bingoNumbers = new ArrayList<Integer>();
+      bingoNumbers.add(99);
+      bingoNumbers.add(29);
+      bingoNumbers.add(77);
+      bingoNumbers.add(13);
+
+      // ENHANCED FOR-EACH LOOP
+      int total = 0;
+      int product = 1;
+      for (Integer num : bingoNumbers) {
+         total = total + num; // same as total += num
+         product *= num;
+      }
+      System.out.println("Sum of bingo numbers: " + total);
+      System.out.println("Product of bingo numbers: " + product);
       
 
    }
